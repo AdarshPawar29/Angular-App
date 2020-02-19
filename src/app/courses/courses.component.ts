@@ -10,17 +10,18 @@ import { Component} from '@angular/core';
             {{ course }}
           </li>
         </ul>
-        <button class="btn btn-primary">Save</button>
+        <button class="btn btn-primary" [class.active]="isActive">Save</button>
         `,
         // *ngFor is a "structural directive". Structural directives shape or reshape the DOM's structure, typically by adding, removing, and manipulating the elements to which they are attached. Directives with an asterisk, *, are structural directives.
   // templateUrl: './courses.component.html',
   // styleUrls: ['./courses.component.scss']
 })
-export class CoursesComponent{
+export class CoursesComponent{ 
   
     title = "List of courses";
     getTitle = () => this.title;
     courses;
+    isActive = true;
     constructor(service: CoursesService) {
       // let service = new CoursesService();
       this.courses = service.getCourses();
