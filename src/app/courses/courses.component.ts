@@ -25,4 +25,22 @@ export class CoursesComponent {
     // let service = new CoursesService();
     this.courses = service.getCourses();
   }
+  onSave = () => {console.log("Save Data")};
+  
+  // event Filtering
+  onKeyUp = () => {console.log("Enter is pressed!")}
+  
+  // <!-- template Variable -->
+  onKeyUp1 = (email) => {console.log(email)}
+
+
+  //two-way template
+  Gemail = "me@example.com";
+  onKeyUp2 = () => {console.log(this.Gemail)}
+
+  post = {
+    title: "Title",
+    isFavorite: true
+  }
+
 }

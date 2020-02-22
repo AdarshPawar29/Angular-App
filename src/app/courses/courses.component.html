@@ -4,4 +4,25 @@
             {{ course }}
           </li>
         </ul>
+
+<!-- Interpolation -->
+<p>{{title}}</p>
+<!-- <div><img src="{{itemImageUrl}}"></div> -->
+
 <button class="btn btn-primary" [class.active]="isActive">Save</button>
+
+<!-- event binding -->
+<button (click) = "onSave()">Save</button>
+
+<!-- inline property -->
+<button [style.backgroundColor] = "isActive ? 'blue' : 'white' ">Save</button> 
+
+<!-- event filtering -->
+<input (keyup.enter) = "onKeyUp()" />
+
+<!-- template Variable -->
+<input #email (keyup.enter) = "onKeyUp1(email.value)" />
+
+<!-- two-way binding -->
+<input [(ngModel)]="Gemail" (keyup.enter)="onKeyUp2()" />
+
