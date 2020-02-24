@@ -26,7 +26,7 @@
 <!-- two-way binding -->
 <input [(ngModel)]="Gemail" (keyup.enter)="onKeyUp2()" />
 
-<div *ngIf="course.length > 0; then CourseList else noCourse">
+<div *ngIf="courses.length > 0; then CourseList else noCourse">
 </div>
 <ng-template #CourseList>
   List of course 

@@ -43,5 +43,5 @@ export class CoursesComponent {
     isFavorite: true
   }
 
-  course = [];
+  
 }
