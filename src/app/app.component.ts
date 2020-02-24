@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  // encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   post={
@@ -14,4 +16,7 @@ export class AppComponent {
   onFavoriteChange() {
     console.log("Favorite Change");
   }
+
+  //ngSwitchCase
+  viewMode = "list";
 }
