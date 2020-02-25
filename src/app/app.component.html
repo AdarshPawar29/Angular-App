@@ -51,3 +51,10 @@ Save
 <!-- only run when we have variable it will handle null situation there will be no error when we use it  -->
 <span>{{ task.assignee?.name }}</span> 
 <!-- its a other way to use it and its used when we deal with complex objects -->
+
+
+<!-- Directives & HostListner -->
+<input type="text" appInputFormat>
+<input type="text" appInputFormat [format] = "'lowercase'">
+<!-- <input type="text" [appInputFormat] = "'lowercase'"> -->
+
