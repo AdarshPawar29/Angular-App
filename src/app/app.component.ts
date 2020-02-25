@@ -44,6 +44,7 @@ export class AppComponent {
   // ngStyle
   canSave = true;
 
+  //trackBy
   task = {
     title: 'Review Application',
     // assignee: {
