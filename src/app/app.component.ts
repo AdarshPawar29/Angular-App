@@ -43,5 +43,12 @@ export class AppComponent {
   }
   // ngStyle
   canSave = true;
-  
+
+  task = {
+    title: 'Review Application',
+    // assignee: {
+    //   name: 'Will Smith'
+    // }
+    assignee: null
+  }
 }
