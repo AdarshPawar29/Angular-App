@@ -19,5 +19,4 @@ export class FavoriteComponent implements OnInit {
     this.isFavorite = !this.isFavorite;
     this.change.emit();
   }
-
 }

@@ -41,4 +41,7 @@ export class AppComponent {
     // return index ;
     return i.id;
   }
+  // ngStyle
+  canSave = true;
+  
 }

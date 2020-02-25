@@ -1,6 +1,6 @@
 <h1>Angular</h1>
 <!-- <courses></courses> -->
-<favorite></favorite>
+<!-- <favorite></favorite> -->
 <!-- <favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()" ></favorite> -->
 <!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
@@ -35,3 +35,14 @@
        <button (click)="onRemove(course)">Remove</button>
     </li>
 </ul> -->
+
+<!-- ngStyle -->
+<button 
+    [ngStyle]="{
+        'backgroundColor': canSave ? 'blue':'gray', 
+        'color': canSave ? 'white':'black'
+    }"
+>
+Save
+</button>
+
