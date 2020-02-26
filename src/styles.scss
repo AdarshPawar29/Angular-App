@@ -2,3 +2,7 @@
 // @import "~bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red; 
+}
