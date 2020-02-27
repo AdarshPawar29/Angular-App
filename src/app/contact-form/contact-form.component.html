@@ -84,10 +84,10 @@
     </div> -->
 
     <div *ngFor="let method of contactMethod"  class="radio">
-        <lable>
+        <label>
             <input ngModel type="radio" name="contactMethod" [value]="method.id">
             {{ method.name }}
-        </lable>
+        </label>
     </div>
     
     <p>
