@@ -41,7 +41,5 @@ export class CoursesComponent {
   post = {
     title: "Title",
     isFavorite: true
-  }
-
-  
+  }  
 }
